@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>gangnam-style web component</title>
+</head>
+<body>
+    <div id="container"></div>
+    <script src="scrat.js"></script>
+    <script src="vue.js"></script>
+    <script>
+        require.config(__FRAMEWORK_CONFIG__);
+        require.async('app', function (App) {
+            var app = new App();
+            app.$appendTo(document.querySelector('#container'));
+        })
+    </script>
+</body>
+</html>
